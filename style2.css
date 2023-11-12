@@ -1,0 +1,35 @@
+.d39 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  margin: 2em;
+  background: #d5dee9;
+  border-width: 0.25em;
+  border-style: solid;
+  border-color: #6e839e;
+  border-radius: 50% 50% 0 0;
+}
+.d39:before,
+.d39:after {
+  content: "";
+  position: absolute;
+  bottom: -0.25em;
+  background: inherit;
+  border-width: 0.25em;
+  border-style: solid;
+  border-color: #6e839e;
+}
+.d39:before {
+  left: 80%;
+  width: 60%;
+  height: 60%;
+  border-left: none;
+  border-radius: 50% 50% 50% 0;
+}
+.d39:after {
+  right: 80%;
+  width: 80%;
+  height: 80%;
+  border-right: none;
+  border-radius: 50% 50% 0;
+}
