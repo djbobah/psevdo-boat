@@ -1,4 +1,4 @@
-.square {
+/* .square {
   width: 100px;
   height: 100px;
   background: red;
@@ -7,9 +7,7 @@
   width: 100px;
   height: 100px;
   background: red;
-  /* -moz-border-radius: 50px;
-  -webkit-border-radius: 50px; */
-  border-radius: 50px;
+    border-radius: 50px;
 }
 .oval {
   width: 200px;
@@ -75,8 +73,7 @@
   width: 150px;
   height: 100px;
   -webkit-transform: skew(20deg);
-  /* -moz-transform: skew(20deg); */
-  /* -o-transform: skew(20deg); */
+
   background: red;
 }
 .trapezoid {
@@ -118,8 +115,7 @@
   border-bottom: 70px solid red;
   border-left: 100px solid transparent;
   -webkit-transform: rotate(35deg);
-  /* -ms-transform: rotate(35deg); */
-  /* -o-transform: rotate(35deg); */
+
 }
 .star-five:before {
   border-bottom: 80px solid red;
@@ -133,9 +129,7 @@
   display: block;
   content: "";
   -webkit-transform: rotate(-35deg);
-  /* -moz-transform: rotate(-35deg); */
-  /* -ms-transform: rotate(-35deg); */
-  /* -o-transform: rotate(-35deg); */
+
 }
 .star-five:after {
   position: absolute;
@@ -149,9 +143,7 @@
   border-bottom: 70px solid red;
   border-left: 100px solid transparent;
   -webkit-transform: rotate(-70deg);
-  /* -moz-transform: rotate(-70deg);
-  -ms-transform: rotate(-70deg);
-  -o-transform: rotate(-70deg); */
+
   content: "";
 }
 .pentagon {
@@ -284,17 +276,17 @@
   border-radius: 50px 50px 50px 0;
 
   transform: rotate(45deg);
-}
+} */
 .container {
   width: 800px;
   height: 600px;
   margin: auto;
-  /* margin-top: calc(50vh - 300px); */
+  margin-top: calc(50vh - 300px);
   background-color: rgb(170, 232, 248);
   position: relative;
   z-index: -2;
 }
-.d39 {
+.cloud {
   position: relative;
   width: 3em;
   height: 3em;
@@ -304,9 +296,11 @@
   border-style: solid;
   border-color: #6e839e;
   border-radius: 50% 50% 0 0;
+  top: 30px;
+  left: 40px;
 }
-.d39:before,
-.d39:after {
+.cloud:before,
+.cloud:after {
   content: "";
   position: absolute;
   bottom: -0.25em;
@@ -315,14 +309,88 @@
   border-style: solid;
   border-color: #6e839e;
 }
-.d39:before {
+.cloud:before {
   left: 80%;
   width: 60%;
   height: 60%;
   border-left: none;
   border-radius: 50% 50% 50% 0;
 }
-.d39:after {
+.cloud:after {
+  right: 80%;
+  width: 80%;
+  height: 80%;
+  border-right: none;
+  border-radius: 50% 50% 0;
+}
+.cloud1 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  margin: 2em;
+  background: #d5dee9;
+  border-width: 0.25em;
+  border-style: solid;
+  border-color: #6e839e;
+  border-radius: 50% 50% 0 0;
+  top: 50px;
+  left: 200px;
+}
+.cloud1:before,
+.cloud1:after {
+  content: "";
+  position: absolute;
+  bottom: -0.25em;
+  background: inherit;
+  border-width: 0.25em;
+  border-style: solid;
+  border-color: #6e839e;
+}
+.cloud1:before {
+  left: 80%;
+  width: 60%;
+  height: 60%;
+  border-left: none;
+  border-radius: 50% 50% 50% 0;
+}
+.cloud1:after {
+  right: 80%;
+  width: 80%;
+  height: 80%;
+  border-right: none;
+  border-radius: 50% 50% 0;
+}
+.cloud2 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  margin: 2em;
+  background: #d5dee9;
+  border-width: 0.25em;
+  border-style: solid;
+  border-color: #6e839e;
+  border-radius: 50% 50% 0 0;
+  top: -110px;
+  left: 300px;
+}
+.cloud2:before,
+.cloud2:after {
+  content: "";
+  position: absolute;
+  bottom: -0.25em;
+  background: inherit;
+  border-width: 0.25em;
+  border-style: solid;
+  border-color: #6e839e;
+}
+.cloud2:before {
+  left: 80%;
+  width: 60%;
+  height: 60%;
+  border-left: none;
+  border-radius: 50% 50% 50% 0;
+}
+.cloud2:after {
   right: 80%;
   width: 80%;
   height: 80%;
@@ -1018,17 +1086,21 @@
   content: "";
 }
 .sun {
-  border-top: 40px solid #fdfdfd;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  /* border-right: none; */
-  background: red;
-  /* -moz-border-radius: 50px;
-  -webkit-border-radius: 50px; */
+  width: 70px;
+  height: 70px;
+  background: rgb(231, 107, 54);
   position: absolute;
   border-radius: 50px;
-  /* right: -10px; */
   position: absolute;
-  right: 0px;
+  top: 10px;
+  right: 10px;
   overflow: hidden;
+}
+
+.sea {
+  width: 100%;
+  height: 95px;
+  background: rgba(23, 61, 234, 0.6);
+  position: absolute;
+  bottom: 0;
 }
